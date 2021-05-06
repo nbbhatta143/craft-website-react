@@ -1,17 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Nav.css";
 
 function Nav(props) {
   return (
-    <>
-      <ul>
-        <Link to="./about/About.js">About</Link>
-        <Link to="./cart/Cart.js">Cart</Link>
-        <Link to="./payments/Payments.js">Payment</Link>
-        <Link to="./product/Product.js">Product</Link>
-        <Link to="./user/Auth.js">Login</Link>
-      </ul>
-    </>
+    <div className="Nav">
+      <p className="Nav-list">
+        <Link to="/">Home</Link> <Link to="/cart">Cart</Link>
+        <Link to="/product">Product</Link>
+        <Link to="/about">About</Link>{" "}
+      </p>
+    </div>
   );
 }
 
