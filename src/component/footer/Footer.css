@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+.Footer {
+  margin: 0 auto;
+}
+.Footer a {
+  color: black;
+  font-weight: bold;
+}
+.Footer a:hover {
+  text-decoration: underline;
+  color: black;
+}
