@@ -2,22 +2,23 @@ import React from "react";
 import Nav from "../nav/Nav";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import { Button } from "react-bootstrap";
+import { Button, Badge } from "react-bootstrap";
 
 function Header(props) {
   return (
     <div className="Header">
       <Nav />{" "}
-      <h1 className="name">
+      <h1 className="Name">
         <Link to="/">Sister's Craft</Link>
       </h1>
       <div className="Auth">
-        <Button>
+        <Badge variant="secondary">
           <Link to="/login">Login</Link>
-        </Button>
-        <Button>
+        </Badge>
+        {"\t|\t"}
+        <Badge>
           <Link to="/signup">Sign Up</Link>
-        </Button>
+        </Badge>
       </div>
     </div>
   );
