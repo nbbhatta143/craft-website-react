@@ -1,32 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 95%;
+  }
+  100% {
+    width: 90%;
+  }
+}
 * {
   box-sizing: border-box;
 }
-.Nav-list {
+.NavList {
   display: inline-block;
   font-size: medium;
 }
 .Nav a {
   padding-right: 10px;
 }
-@media screen and (max-width: 780) {
-  .Nav a {
-    width: 10%;
-    padding: 1%;
-    margin: 0;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #333;
+.Nav button {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .NavList {
+    padding-top: 15px;
+    color: rgb(252, 252, 252) !important;
   }
-  .Nav a:first-child {
-    border-left: none;
+  .NavList a {
+    font-size: 18px;
   }
-  .Nav a:last-child {
-    border-right: none;
+  .openbtn {
+    font-size: 12px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.247);
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    left: -5px;
   }
-  .Nav a {
-    margin: 0;
-    padding: 0 0 0.2em 0;
-    line-height: 1.1em;
-    text-align: center;
-    height: 3.8em;
+  .Nav button {
+    display: inline-block;
+  }
+  .NavList {
+    height: 35%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 5%;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.685);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .NavList a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(187, 183, 183) !important;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .NavList a:hover {
+    color: #f1f1f1;
+  }
+  .NavList .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: rgba(17, 17, 17, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .openbtn:hover {
+    background-color: #444;
+  }
+  .Nav {
+    transition: margin-left 0.5s;
+    padding: 5px;
   }
 }
