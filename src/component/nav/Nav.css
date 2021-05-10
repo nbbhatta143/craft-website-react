@@ -41,6 +41,9 @@
   display: none;
 }
 @media screen and (max-width: 900px) {
+  .Navigation {
+    display: none;
+  }
   .NavList {
     padding-top: 15px;
     color: rgb(252, 252, 252) !important;
@@ -73,7 +76,7 @@
     padding-top: 60px;
   }
   .NavList a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 50px 1px 8px;
     text-decoration: none;
     font-size: 25px;
     color: rgb(187, 183, 183) !important;
