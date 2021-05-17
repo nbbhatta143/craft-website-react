@@ -12,13 +12,14 @@ function Footer() {
         <Link to="/product">Product</Link>
         {" | "}
         <Link to="/about">About</Link>
-        {" | "}
+        <span>
+          <br />
+        </span>
         <Link to="/login">Login</Link>
         {" | "}
         <Link to="signup">Sign Up</Link>
         <p className="m-0">
-          Copyright &copy; {new Date().getFullYear()} <Link to="/">Sister's Craft</Link>. All rights
-          reserved.
+          Copyright &copy; {new Date().getFullYear()} <Link to="/">Sister's Craft</Link>. All rights reserved.
         </p>
       </footer>
     </div>

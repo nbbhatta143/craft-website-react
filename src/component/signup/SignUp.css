@@ -1,0 +1,43 @@
+.SignUp {
+  max-width: 350px;
+  border-radius: 20px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.438);
+  box-sizing: border-box;
+  padding: 20px;
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-direction: column;
+}
+.SignUp h2 {
+  text-align: center;
+  color: #f1f1f1;
+}
+.SignUp input[type="text"],
+.SignUp input[type="password"],
+.SignUp input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 5px;
+  background: rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+}
+.SignUp input[type="submit"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  outline: none;
+  border: none;
+  background: #ffffff;
+  opacity: 0.7;
+  border-radius: 20px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
