@@ -1,15 +1,16 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 
-function Login(props) {
+const Login = () => {
   return (
     <div className="Login">
       <Form>
-        <input type="text" placeholder="User Name" />
-        <input type="password" placeholder="Password" />
-        <Button>Submit</Button>
+        <h2>Welcome Back!</h2>
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Password" />
       </Form>
     </div>
   );
-}
+};
+
 export default Login;
