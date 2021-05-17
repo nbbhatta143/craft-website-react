@@ -34,7 +34,7 @@
 @media screen and (max-width: 900px) {
   .Name a {
     color: white;
-    font-size: 18px;
+    font-size: large;
     font-weight: bolder;
   }
   .Header {
