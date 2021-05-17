@@ -1,5 +1,5 @@
 .SignUp {
-  max-width: 350px;
+  max-width: 500px;
   border-radius: 20px;
   margin: auto;
   background: rgba(0, 0, 0, 0.438);
@@ -29,6 +29,9 @@
   margin: 5px;
   font-weight: bold;
 }
+.SignUp input[type="text"] {
+  width: inherit;
+}
 .SignUp input[type="submit"] {
   width: 100%;
   box-sizing: border-box;
@@ -40,4 +43,28 @@
   border-radius: 20px;
   font-size: 20px;
   color: rgb(0, 0, 0);
+}
+.left {
+  position: relative;
+  float: left;
+  /* display: inline-block; */
+}
+.right {
+  position: relative;
+  float: right;
+  /* display: inline-block; */
+}
+.right,
+.left {
+  display: inline-block;
+}
+@media screen and (max-width: 900px) {
+  .SignUp {
+    width: 98%;
+  }
+  .SignUp input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+  }
 }
