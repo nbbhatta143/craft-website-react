@@ -9,3 +9,13 @@
   width: 100%;
   text-align: center;
 }
+.About,
+.Cart,
+.Product,
+.HomePage,
+.Login,
+.SignUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
