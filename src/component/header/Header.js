@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "../nav/Nav";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import { Button, Badge } from "react-bootstrap";
+import {Badge } from "react-bootstrap";
 
 function Header(props) {
   return (
