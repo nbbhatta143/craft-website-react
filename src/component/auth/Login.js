@@ -1,5 +1,6 @@
 import React from "react";
-import { Form, FormGroup } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Login.css";
 
 const Login = () => {
@@ -24,7 +25,18 @@ const Login = () => {
         <Form.Control type="submit" value="Sign In" />
         <p className="forgot-password">
           Forgot <a href="#">password?</a>
+          <br />
+          Forgot <a href="#">User Name?</a>
         </p>
+        <br />
+        <div className="signUpDiv">
+          {" "}
+          <small>Don't have an account?</small>
+          <br />
+          <Link type="submit" to="/signup">
+            Sign Up
+          </Link>
+        </div>
       </Form>
     </div>
   );
