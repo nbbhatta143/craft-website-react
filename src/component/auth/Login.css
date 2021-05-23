@@ -1,0 +1,71 @@
+.Login input[type="password"],
+.Login input[type="email"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 5px;
+  background: rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(31, 31, 31);
+  color: rgb(5, 5, 5);
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+}
+.Login h2,
+.Login h5 {
+  text-align: center;
+  color: #0a0a0a;
+  margin-bottom: 10px;
+}
+.Login {
+  max-width: 500px;
+  border-radius: 20px;
+  margin: 10% auto;
+  background: rgba(255, 255, 255, 0.979);
+  /* border: 1px solid black; */
+  padding: 20px;
+  padding-bottom: 5px;
+  color: rgb(8, 8, 8);
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 100%;
+}
+.Login input[type="submit"] {
+  max-width: 100%;
+  width: 50%;
+  border-radius: 10px;
+  padding: 2% 10px;
+  background: #ffffff;
+  opacity: 0.7;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  float: right;
+  position: relative;
+  right: 25%;
+  margin-top: 5%;
+}
+.Login a {
+  color: black;
+  text-decoration: none;
+  padding: 0.2em;
+}
+.Login .forgot-password {
+  padding: 15% 2px 0% 2px;
+  width: 100%;
+  margin-top: 15%;
+}
+@media screen and (max-width: 900px) {
+  .Login {
+    position: relative;
+    width: 90%;
+  }
+  .Login input[type="text"],
+  .Login input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+  }
+}
