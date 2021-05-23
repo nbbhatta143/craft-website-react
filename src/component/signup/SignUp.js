@@ -1,24 +1,22 @@
-import { Button, Col, Form, Row } from "react-bootstrap";
+import { Button, Card, Form, Row } from "react-bootstrap";
 import "./SignUp.css";
 
 function SignUp(props) {
   return (
-    <div className="SignUp">
-      <h2> Sing Up </h2>
-      <Form>
-        <Row>
-          <Col>
+    <div className="SignUpMain">
+      <div className="SignUp">
+        <h2> Sing Up </h2>
+        <Card>
+          <Form>
             <Form.Control type="text" placeholder="First Name" required />
-          </Col>
-          <Col>
             <Form.Control type="text" placeholder="Last Name" required />
-          </Col>
-        </Row>
-        <Form.Control type="email" placeholder="Email" required />
-        <Form.Control type="password" placeholder="Password" required />
-        <Form.Control type="password" placeholder="Re-Enter Password" required />
-        <Form.Control type="submit" value="Submit" />
-      </Form>
+            <Form.Control type="email" placeholder="Email" required />
+            <Form.Control type="password" placeholder="Password" required />
+            <Form.Control type="password" placeholder="Re-Enter Password" required />
+            <Form.Control type="submit" value="Submit" />
+          </Form>
+        </Card>
+      </div>
     </div>
   );
 }
