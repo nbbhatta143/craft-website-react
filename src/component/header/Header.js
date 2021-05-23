@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "../nav/Nav";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import {Badge } from "react-bootstrap";
+import { Badge } from "react-bootstrap";
 
 function Header(props) {
   return (
@@ -14,10 +14,6 @@ function Header(props) {
       <div className="Auth">
         <Badge variant="secondary">
           <Link to="/login">Login</Link>
-        </Badge>
-        {"\t|\t"}
-        <Badge>
-          <Link to="/signup">Sign Up</Link>
         </Badge>
       </div>
     </div>
