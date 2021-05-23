@@ -1,18 +1,26 @@
+.SignUpMain {
+  display: flex;
+  height: 99vh;
+  width: 100%;
+  align-content: center;
+  justify-items: center;
+}
 .SignUp {
   max-width: 500px;
   border-radius: 20px;
   margin: auto;
-  background: rgba(0, 0, 0, 0.438);
-  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.979);
+  /* border: 1px solid black; */
   padding: 20px;
   color: #fff;
-  margin-top: 100px;
-  margin-bottom: 100px;
   flex-direction: column;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
 .SignUp h2 {
   text-align: center;
-  color: #f1f1f1;
+  color: #0a0a0a;
 }
 .SignUp input[type="text"],
 .SignUp input[type="password"],
@@ -23,48 +31,43 @@
   background: rgba(0, 0, 0, 0.1);
   outline: none;
   border: none;
-  border-bottom: 1px solid #fff;
-  color: #fff;
+  border-bottom: 1px solid rgb(31, 31, 31);
+  color: rgb(5, 5, 5);
   border-radius: 5px;
   margin: 5px;
   font-weight: bold;
 }
-.SignUp input[type="text"] {
+/* .SignUp input[type="text"] {
   width: inherit;
-}
+} */
 .SignUp input[type="submit"] {
-  width: 100%;
+  position: relative;
+  width: 50%;
   box-sizing: border-box;
-  padding: 0 10px;
-  outline: none;
-  border: none;
+  padding: 3px 10px;
+  left: 25%;
   background: #ffffff;
   opacity: 0.7;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 20px;
   color: rgb(0, 0, 0);
 }
-.left {
-  position: relative;
-  float: left;
-  /* display: inline-block; */
-}
-.right {
-  position: relative;
-  float: right;
-  /* display: inline-block; */
-}
-.right,
-.left {
-  display: inline-block;
-}
+
 @media screen and (max-width: 900px) {
   .SignUp {
-    width: 98%;
+    position: relative;
+    width: 90%;
+    top: 10%;
   }
   .SignUp input[type="text"] {
     width: 100%;
     padding: 10px;
     margin: 5px;
+  }
+  .SignUpMain {
+    height: 100%;
+    width: 99%;
+    position: relative;
+    margin-top: 15%;
   }
 }
