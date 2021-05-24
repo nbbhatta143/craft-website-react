@@ -44,10 +44,7 @@
   .Navigation {
     display: none;
   }
-  .NavList {
-    padding-top: 15px;
-    color: rgb(252, 252, 252) !important;
-  }
+
   .NavList a {
     font-size: 18px;
   }
@@ -68,12 +65,13 @@
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 5%;
+    top: 40px;
     left: 0;
     background-color: rgba(17, 17, 17, 0.685);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    color: rgb(252, 252, 252) !important;
   }
   .NavList a {
     padding: 8px 50px 1px 8px;

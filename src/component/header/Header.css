@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -25,6 +26,7 @@
 }
 .Name a {
   color: white;
+  font-family: "Pattaya", sans-serif;
 }
 .Header div {
   margin-left: 10px;
@@ -36,6 +38,7 @@
     color: white;
     font-size: 24px;
     font-weight: bolder;
+    font-family: "Pattaya", sans-serif;
   }
   .Header {
     height: 40px;

@@ -9,7 +9,7 @@ function Header(props) {
     <div className="Header">
       <Nav />{" "}
       <h1 className="Name">
-        <Link to="/">Sister's Craft</Link>
+        <Link to="/">Mother's Craft</Link>
       </h1>
       <div className="Auth">
         <Badge variant="secondary">
