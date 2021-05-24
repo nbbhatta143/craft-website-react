@@ -1,6 +1,6 @@
 import { Button, Card, Form, Row } from "react-bootstrap";
 import "./SignUp.css";
-
+import React from "react"
 function SignUp(props) {
   return (
     <div className="SignUpMain">
