@@ -24,38 +24,32 @@ class Nav extends Component {
     if (!this.myRef.current.contains(e.target)) {
       this.setState({ clickOutside: true });
       this.setState({ Width: 0 });
-      this.setState((state, props) => ({
-        clickCounters: state.clickCounters + 1,
-      }));
+      this.setState({ clickCounters: 1 });
     }
   };
   handleClickInside = () => {
     this.setState({ clickOutside: false });
+    this.setState({ Width: 0 });
   };
   OpenNav = (e) => {
     this.setState({ Width: 150 });
-
-    this.setState((state, props) => ({
-      clickCounters: state.clickCounters + 1,
-    }));
-    // console.log(this.state.clickCounters);
+    //console.log(this.state.clickCounters);
     if (this.state.clickCounters % 2 === 0) {
       this.setState({ Width: 0 });
     }
+    this.setState((state, props) => ({
+      clickCounters: state.clickCounters + 1,
+    }));
   };
   CloseNav = (e) => {
     this.setState({ Width: 0 });
     this.setState((state, props) => ({
       clickCounters: state.clickCounters + 1,
     }));
-    // console.log(this.state.clickCounters);
-    if (this.state.clickCounters % 2 === 1) {
-      this.setState({ Width: 150 });
-    }
   };
   render() {
     return (
-      <div className="Nav" ref={this.myRef} onClick={this.handleClickInside}>
+      <div className="Nav" ref={this.myRef} onClick={this.handleClickOutside}>
         <p className="NavList" style={{ width: this.state.Width }}>
           <span className="Navigation">
             <Links />
@@ -80,7 +74,7 @@ function Links(params) {
       <Link to="/cart">Cart</Link>
       <Link to="/about">About</Link>
       <Link to="/signup">SignUp</Link>
-      <Link to="/login">Login</Link>
+      {/* <Link to="/login">Login</Link> */}
     </>
   );
 }

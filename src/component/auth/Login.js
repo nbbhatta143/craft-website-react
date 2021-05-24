@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Button } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Login.css";
 
@@ -13,20 +13,11 @@ const Login = () => {
         <Form.Control type="email" placeholder="Email" required />
         <Form.Control type="password" placeholder="Password" required />
 
-        {/* <FormGroup>
-          <Form.Control className="custom-checkbox">
-            <input type="checkbox" className="custom-control-input" id="customCheck1" />
-            <label className="custom-control-label" htmlFor="customCheck1">
-              Remember me
-            </label>
-          </Form.Control> 
-        </FormGroup>*/}
-
         <Form.Control type="submit" value="Sign In" />
         <p className="forgot-password">
-          Forgot <a href="#">password?</a>
+          Forgot <Link to="/">password?</Link>
           <br />
-          Forgot <a href="#">User Name?</a>
+          Forgot <Link to="/">User Name?</Link>
         </p>
         <br />
         <div className="signUpDiv">
