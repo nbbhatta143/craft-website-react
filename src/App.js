@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/craft-website-react" component={HomePage} />
         <Route exact path="/product" component={Product} />
         <Route exact path="/cart" component={Cart} />
         <Route exact path="/about" component={About} />
