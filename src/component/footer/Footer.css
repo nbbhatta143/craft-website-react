@@ -18,9 +18,29 @@
 .Footer span {
   display: none;
 }
+.Footer button[type="submit"] {
+  /* border: none; */
+  border: none;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.15% 0.5%;
+  /* border-bottom: 1px solid rgb(117, 31, 0); */
+  margin: 0%;
+}
 @media screen and (max-width: 900px) {
   .Footer span {
     display: initial;
     margin-top: 0px;
+  }
+  .Footer button[type="submit"] {
+    width: 15%;
+    padding: 1% 0%;
+    background: rgba(0, 0, 0, 0.01);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(31, 31, 31);
+    color: rgb(5, 5, 5);
+    border-radius: 5px;
+    margin: 1%;
+    font-weight: bold;
   }
 }
