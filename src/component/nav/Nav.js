@@ -69,7 +69,7 @@ function Links(params) {
   return (
     <>
       {" "}
-      <Link to="/craft-website-react">Home</Link>
+      <Link to="/">Home</Link>
       <Link to="/product">Product</Link>
       <Link to="/cart">Cart</Link>
       <Link to="/about">About</Link>

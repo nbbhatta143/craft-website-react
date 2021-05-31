@@ -1,14 +1,16 @@
-.SignUpMain {
+.SignUpMain,
+.ForgetPassword {
   /* display: flex; */
   height: 100%;
   width: 100%;
   /* align-content: center; */
   /* justify-content: center; */
 }
-.SignUp {
+.SignUp,
+.ForgetPassword {
   max-width: 500px;
   border-radius: 20px;
-  margin: 10% auto;
+  margin: 5% auto;
   background: rgba(255, 255, 255, 0.979);
   /* border: 1px solid black; */
   padding: 0px 20px 0px 20px;
@@ -18,7 +20,16 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
-.SignUp form {
+
+.SignUp small {
+  position: relative;
+  margin-right: 0%;
+  color: black;
+  text-align: right;
+}
+
+.SignUp form,
+.ForgetPassword {
   margin-bottom: 2%;
   margin-top: 1%;
 }
@@ -29,7 +40,10 @@
 }
 .SignUp input[type="text"],
 .SignUp input[type="password"],
-.SignUp input[type="email"] {
+.SignUp input[type="email"],
+.ForgetPassword input[type="text"],
+.ForgetPassword input[type="password"],
+.ForgetPassword input[type="email"] {
   width: 100%;
   box-sizing: border-box;
   padding: 12px 5px;
@@ -45,7 +59,9 @@
 /* .SignUp input[type="text"] {
   width: inherit;
 } */
-.SignUp input[type="submit"] {
+.SignUp input[type="submit"],
+.ForgetPassword input[type="submit"],
+.SignUp small a {
   position: relative;
   width: 50%;
   box-sizing: border-box;
@@ -57,9 +73,44 @@
   font-size: 20px;
   color: rgb(0, 0, 0);
 }
-
+.SignUp small a {
+  font-size: 1em;
+  text-align: center;
+  float: right;
+  left: 1%;
+  border-bottom: 1px solid rgb(31, 31, 31);
+  background: rgba(0, 0, 0, 0.1);
+  margin-bottom: 1%;
+}
+.ForgetPassword {
+  margin: 5% auto;
+  color: #0a0a0a;
+  text-align: center;
+  font-family: sans-serif;
+}
+.ForgetPassword form {
+  margin-bottom: 2%;
+}
+.ForgetPassword h3 {
+  margin-top: 2%;
+}
+.ForgetPassword hr {
+  color: black;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.ForgetPassword small a {
+  position: relative;
+  text-decoration: none;
+}
+.ForgetPassword small {
+  border: none;
+  margin-right: 0%;
+  margin-bottom: 1%;
+}
 @media screen and (max-width: 900px) {
-  .SignUp {
+  .SignUp,
+  .ForgetPassword {
     position: relative;
     width: 90%;
     top: 5%;

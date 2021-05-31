@@ -15,20 +15,23 @@ const Login = () => {
 
         <Form.Control type="submit" value="Sign In" />
         <p className="forgot-password">
-          Forgot <Link to="/">password?</Link>
-          <br />
-          Forgot <Link to="/">User Name?</Link>
+          Forgot <Link to="/passwordReset">password?</Link>
         </p>
         <br />
-        <div className="signUpDiv">
-          {" "}
-          <small>Don't have an account?</small>
+      </Form>
+      <div className="signUpDiv">
+        {" "}
+        <small>
+          Don't have an account?
           <br />
           <Link type="submit" to="/signup">
             Sign Up
           </Link>
-        </div>
-      </Form>
+          <Link type="submit" to="/">
+            Guest?
+          </Link>
+        </small>
+      </div>
     </div>
   );
 };
