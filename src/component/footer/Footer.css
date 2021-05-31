@@ -9,9 +9,9 @@
   text-decoration: none;
   color: rgba(248, 245, 245, 0.918);
 }
-.Footer p a {
+.Footer small a {
   font-family: "Pattaya", sans-serif;
-  color: black;
+  /* color: black; */
 }
 .Footer a:hover {
   text-decoration: underline;
@@ -29,17 +29,18 @@
   /* border-bottom: 1px solid rgb(117, 31, 0); */
   margin: 0.5%;
 }
-.Footer p {
-  position: fixed;
+.Footer small {
+  /*position: relative;
   text-align: center;
   left: 0;
   bottom: 0%;
-  width: 100%;
+  width: 100%;*/
+  color: white;
 }
 footer {
   position: fixed;
   left: 0;
-  bottom: 4%;
+  bottom: 0%;
   width: 100%;
   text-align: center;
   z-index: 1;
@@ -62,9 +63,15 @@ footer {
     margin: 0.5%;
     font-weight: bold;
   }
+  em {
+    display: none;
+  }
 }
 @media screen and (max-width: 300px) {
   .Footer {
+    display: none;
+  }
+  em {
     display: none;
   }
 }
