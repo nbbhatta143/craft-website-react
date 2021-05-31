@@ -11,18 +11,20 @@ import SignUp from "../src/component/signup/SignUp";
 import About from "../src/component/about/About";
 import Page404 from "../src/component/page404/Page404";
 import Footer from "../src/component/footer/Footer";
+import ForgetPassword from "../src/component/auth/ForgetPassword";
 function App() {
   return (
     <div className="App">
       <Header />
       <Switch>
-        <Route exact path="/craft-website-react" component={HomePage} />
+        <Route exact path="/" component={HomePage} />
         <Route exact path="/product" component={Product} />
         <Route exact path="/cart" component={Cart} />
         <Route exact path="/about" component={About} />
         <Route exact path="/payments" component={Payments} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={SignUp} />
+        <Route exact path="/passwordReset" component={ForgetPassword} />
         <Route path="*" component={Page404} />
       </Switch>
       <Footer />
