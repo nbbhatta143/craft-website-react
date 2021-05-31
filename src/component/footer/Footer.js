@@ -34,7 +34,8 @@ function Footer() {
           </button>
         </div>
         <p className="m-0">
-          Copyright &copy; {new Date().getFullYear()} <Link to="/">Sister's Craft</Link>. All rights reserved.
+          Copyright &copy; {new Date().getFullYear()} <Link to="/">Sister's Craft</Link>. All rights
+          reserved.
         </p>
       </footer>
     </div>
