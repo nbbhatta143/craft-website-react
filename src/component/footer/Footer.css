@@ -7,11 +7,16 @@
 .Footer a {
   font-weight: bold;
   text-decoration: none;
-  color: rgb(5, 5, 5);
+  color: rgba(248, 245, 245, 0.918);
+}
+.Footer p a {
+  font-family: "Pattaya", sans-serif;
+  color: black;
 }
 .Footer a:hover {
   text-decoration: underline;
-  color: rgb(32, 31, 31);
+  background-color: rgb(250, 250, 250);
+  color: black;
 }
 .Footer span {
   display: none;
@@ -19,10 +24,26 @@
 .Footer button[type="submit"] {
   /* border: none; */
   border: none;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(238, 234, 234, 0);
   padding: 0.15% 0.5%;
   /* border-bottom: 1px solid rgb(117, 31, 0); */
   margin: 0.5%;
+}
+.Footer p {
+  position: fixed;
+  text-align: center;
+  left: 0;
+  bottom: 0%;
+  width: 100%;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 4%;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.685);
 }
 @media screen and (max-width: 900px) {
   .Footer span {
@@ -35,10 +56,15 @@
     background: rgba(0, 0, 0, 0.01);
     outline: none;
     border: none;
-    border-bottom: 1px solid rgb(31, 31, 31);
+    border-bottom: 1px solid rgb(153, 152, 152);
     color: rgb(5, 5, 5);
     border-radius: 5px;
     margin: 0.5%;
     font-weight: bold;
+  }
+}
+@media screen and (max-width: 300px) {
+  .Footer {
+    display: none;
   }
 }

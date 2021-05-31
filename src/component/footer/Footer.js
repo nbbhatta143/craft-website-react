@@ -33,11 +33,10 @@ function Footer() {
             <Link to="signup">Sign Up</Link>
           </button>
         </div>
-        <p className="m-0">
-          Copyright &copy; {new Date().getFullYear()} <Link to="/">Sister's Craft</Link>. All rights
-          reserved.
-        </p>
       </footer>
+      <p className="m-0">
+        Copyright &copy; {new Date().getFullYear()} <Link to="/">Mother's Craft</Link>. All rights reserved.
+      </p>
     </div>
   );
 }
