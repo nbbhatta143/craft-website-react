@@ -9,7 +9,8 @@
 .HomePage,
 .Login,
 .SignUp,
-.Page404 {
+.Page404,
+.ForgetPassword {
   display: flex;
   justify-content: center;
   align-items: center;

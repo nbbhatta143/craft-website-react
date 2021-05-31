@@ -1,6 +1,8 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import { Card, Form } from "react-bootstrap";
 import "./SignUp.css";
-import React from "react";
+
 function SignUp(props) {
   return (
     <div className="SignUpMain">
@@ -15,7 +17,14 @@ function SignUp(props) {
             <Form.Control type="password" placeholder="Re-Enter Password" required />
             <Form.Control type="submit" value="Submit" />
           </Form>
-        </Card>
+        </Card>{" "}
+        <small>
+          <span>Already have an account?</span>
+          <br />
+          <Link type="submit" to="/Login">
+            Login
+          </Link>
+        </small>
       </div>
     </div>
   );
