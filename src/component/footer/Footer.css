@@ -3,8 +3,6 @@
 }
 .Footer {
   margin: 0 auto;
-  /* background-color: rgb(95, 160, 151);
-  color: white; */
 }
 .Footer a {
   font-weight: bold;
@@ -24,7 +22,7 @@
   background: rgba(0, 0, 0, 0.05);
   padding: 0.15% 0.5%;
   /* border-bottom: 1px solid rgb(117, 31, 0); */
-  margin: 0%;
+  margin: 0.5%;
 }
 @media screen and (max-width: 900px) {
   .Footer span {
@@ -40,7 +38,7 @@
     border-bottom: 1px solid rgb(31, 31, 31);
     color: rgb(5, 5, 5);
     border-radius: 5px;
-    margin: 1%;
+    margin: 0.5%;
     font-weight: bold;
   }
 }
