@@ -9,7 +9,7 @@ function Header(props) {
     <div className="Header">
       <Nav />{" "}
       <h1 className="Name">
-        <Link to="/craft-website-react">Mother's Craft</Link>
+        <Link to="/">Mother's Craft</Link>
       </h1>
       <div className="Auth">
         <Badge variant="secondary">

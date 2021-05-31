@@ -44,7 +44,7 @@ footer {
   width: 100%;
   text-align: center;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.685);
+  background-color: rgba(44, 44, 44, 0.603);
 }
 @media screen and (max-width: 900px) {
   .Footer span {

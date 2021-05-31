@@ -7,7 +7,7 @@ function Footer() {
       <footer>
         <div className="footerLinks">
           <button type="submit">
-            <Link to="/craft-website-react">Home</Link>
+            <Link to="/">Home</Link>
           </button>
           <em>{"\t|\t"}</em>
           <button type="submit">
