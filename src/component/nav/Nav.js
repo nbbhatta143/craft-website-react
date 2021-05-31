@@ -73,7 +73,7 @@ function Links(params) {
       <Link to="/product">Product</Link>
       <Link to="/cart">Cart</Link>
       <Link to="/about">About</Link>
-      <Link to="/signup">SignUp</Link>
+      {/* <Link to="/signup">SignUp</Link> */}
       {/* <Link to="/login">Login</Link> */}
     </>
   );

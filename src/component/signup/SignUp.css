@@ -1,24 +1,29 @@
 .SignUpMain {
-  display: flex;
-  height: 99vh;
+  /* display: flex; */
+  height: 100%;
   width: 100%;
-  align-content: center;
-  justify-items: center;
+  /* align-content: center; */
+  /* justify-content: center; */
 }
 .SignUp {
   max-width: 500px;
   border-radius: 20px;
-  margin: auto;
+  margin: 10% auto;
   background: rgba(255, 255, 255, 0.979);
   /* border: 1px solid black; */
-  padding: 20px;
+  padding: 0px 20px 0px 20px;
   color: #fff;
   flex-direction: column;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
+.SignUp form {
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
 .SignUp h2 {
+  margin-top: 1%;
   text-align: center;
   color: #0a0a0a;
 }
@@ -57,7 +62,7 @@
   .SignUp {
     position: relative;
     width: 90%;
-    top: 10%;
+    top: 5%;
   }
   .SignUp input[type="text"] {
     width: 100%;
@@ -68,6 +73,6 @@
     height: 100%;
     width: 99%;
     position: relative;
-    margin-top: 15%;
+    margin-top: 5%;
   }
 }

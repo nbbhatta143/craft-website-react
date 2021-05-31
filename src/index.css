@@ -1,23 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 * {
   box-sizing: border-box;
   margin: 0 auto;
-}
-.App body {
-  overflow: scroll;
-}
-.Footer p {
-  position: relative;
-  margin-top: 1%;
-  text-align: center;
-}
-footer {
-  position: sticky;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 0px;
-  margin-top: 6rem;
 }
 .About,
 .Cart,
