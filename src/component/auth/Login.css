@@ -21,7 +21,7 @@
 .Login {
   max-width: 500px;
   border-radius: 20px;
-  margin: 10% auto;
+  margin: 5% auto;
   background: rgba(255, 255, 255, 0.979);
   /* border: 1px solid black; */
   padding: 20px;
@@ -71,7 +71,22 @@
   padding: 15% 2px 0% 2px;
   width: 100%;
   margin-top: 15%;
+  text-decoration: underline;
 }
+.signUpDiv {
+  position: relative;
+  margin-right: 0%;
+  text-align: right;
+  display: inline;
+}
+.Login small a {
+  font-size: 0.5em;
+  float: right;
+  border-bottom: 1px solid rgb(31, 31, 31) !important;
+  background: rgba(0, 0, 0, 0.1) !important;
+  margin-bottom: 1%;
+}
+
 @media screen and (max-width: 900px) {
   .Login {
     position: relative;
@@ -83,9 +98,4 @@
     padding: 10px;
     margin: 5px;
   }
-}
-.signUpDiv {
-  position: relative;
-  float: right;
-  text-align: center;
 }
