@@ -9,34 +9,34 @@ function Footer() {
           <button type="submit">
             <Link to="/craft-website-react">Home</Link>
           </button>
-
+          <em>{"\t|\t"}</em>
           <button type="submit">
             <Link to="/cart">Cart</Link>
           </button>
-
+          <em>{"\t|\t"}</em>
           <button type="submit">
             <Link to="/product">Product</Link>
           </button>
-
+          <em>{"\t|\t"}</em>
           <button type="submit">
             <Link to="/about">About</Link>
           </button>
-
+          <em>{"\t|\t"}</em>
           <span>
             <br />
           </span>
           <button type="submit">
             <Link to="/login">Login</Link>
           </button>
-
+          <em>{"\t|\t"}</em>
           <button type="submit">
             <Link to="signup">Sign Up</Link>
           </button>
-        </div>
+        </div>{" "}
+        <small>
+          Copyright &copy; {new Date().getFullYear()} <Link to="/">Mother's Craft</Link>. All rights reserved.
+        </small>
       </footer>
-      <p className="m-0">
-        Copyright &copy; {new Date().getFullYear()} <Link to="/">Mother's Craft</Link>. All rights reserved.
-      </p>
     </div>
   );
 }
