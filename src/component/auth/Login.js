@@ -1,39 +1,77 @@
-import React from "react";
+import React, { Component } from "react";
 import { Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Login.css";
 
-const Login = () => {
-  return (
-    <div className="Login">
-      <Form>
-        <h2>Welcome Back!</h2>
-        <h5>Please log in</h5>
+class Login extends Component {
+  constructor(props) {
+    super(props);
 
-        <Form.Control type="email" placeholder="Email" required />
-        <Form.Control type="password" placeholder="Password" required />
+    this.state = {
+      email: "",
+      password: "",
+      isAuth: false,
+    };
+  }
 
-        <Form.Control type="submit" value="Sign In" />
-        <p className="forgot-password">
-          Forgot <Link to="/passwordReset">password?</Link>
-        </p>
-        <br />
-      </Form>
-      <div className="signUpDiv">
-        {" "}
-        <small>
-          Don't have an account?
+  handleChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const data = { ...this.state };
+
+    console.log(this.state.isAuth);
+  };
+  render() {
+    return (
+      <div className="Login">
+        <Form action="" onSubmit={this.handleSubmit}>
+          <h2>Welcome Back!</h2>
+          <h5>Please log in</h5>
+
+          <Form.Control
+            type="email"
+            placeholder="Email"
+            name="email"
+            value={this.state.email}
+            onChange={this.handleChange}
+            required
+          />
+          <Form.Control
+            type="password"
+            placeholder="Password"
+            name="password"
+            value={this.state.password}
+            onChange={this.handleChange}
+            required
+          />
+
+          <Form.Control type="submit" value="Sign In" />
+          <p className="forgot-password">
+            Forgot <Link to="/passwordReset">password?</Link>
+          </p>
           <br />
-          <Link type="submit" to="/signup">
-            Sign Up
-          </Link>
-          <Link type="submit" to="/">
-            Guest?
-          </Link>
-        </small>
+        </Form>
+        <div className="signUpDiv">
+          {" "}
+          <small>
+            Don't have an account?
+            <br />
+            <Link type="submit" to="/signup">
+              Sign Up
+            </Link>
+            <Link type="submit" to="/">
+              Guest?
+            </Link>
+          </small>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Login;
