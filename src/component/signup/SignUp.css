@@ -27,7 +27,12 @@
   color: black;
   text-align: right;
 }
-
+.success {
+  display: flex;
+  position: relative;
+  margin: 1% auto;
+  flex-direction: column;
+}
 .SignUp form,
 .ForgetPassword {
   margin-bottom: 2%;
